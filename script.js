@@ -2,7 +2,7 @@
 const html=document.documentElement;
 const toggle=()=>{html.dataset.theme=html.dataset.theme==="dark"?"light":"dark";localStorage.setItem("theme",html.dataset.theme);};
 const initTheme=()=>{const s=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");html.dataset.theme=s;};
-initTheme();
+initTheme(); 
 window.addEventListener("keydown",e=>e.key==="t"&&toggle());
 
 // ---------- year ----------
