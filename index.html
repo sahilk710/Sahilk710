@@ -1,106 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sahil Kasliwal | AI & Data Scientist</title>
-
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Sahil Kasliwal — AI engineer building GenAI tools, data pipelines and intelligent analytics.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="stylesheet" href="style.css">
-
-  <!-- Smooth scroll polyfill for older browsers -->
-  <script defer src="script.js"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <script src="https://unpkg.com/phosphor-icons@1.4.2/src/index.js" defer></script>
 </head>
+
 <body>
-
-  <!-- Navigation -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="hero" class="hero-section">
-    <h1>Hi, I'm <span>Sahil Kasliwal</span></h1>
-    <p>AI Engineer | Data Scientist | GenAI Builder</p>
-    <a href="#projects" class="btn">View My Work</a>
+  <!-- ===== 3-D animated hero ===== -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-text">
+      <h1 class="glitch" data-text="Hi, I'm Sahil Kasliwal">Hi, I'm Sahil Kasliwal</h1>
+      <p class="tagline">AI Engineer · Data Scientist · GenAI Builder</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">Explore my work</a>
+        <a href="assets/cv.pdf" target="_blank" class="btn ghost">Download CV</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator">
+      <i class="ph-caret-down-bold"></i>
+    </a>
   </section>
 
-  <!-- About / Skills -->
-  <section id="about" class="about-section">
-    <h2>What I Do</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>Data Engineering</h3>
-        <p>ETL, Spark, Airflow, DBT, Databricks, large-scale data pipelines.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Python & ML</h3>
-        <p>Python, TensorFlow, PyTorch, Scikit-Learn, XGBoost, LightGBM.</p>
-      </div>
-      <div class="skill-card">
-        <h3>GenAI & LLMs</h3>
-        <p>Prompt engineering, LangChain, RAG, OpenAI API workflows.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Visualization</h3>
-        <p>Streamlit, Plotly, D3.js dashboards & model insights.</p>
+  <!-- ===== About ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">What I Do</h2>
+      <div class="grid">
+        <!-- your 4 cards here — unchanged content, upgraded styling -->
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section">
-    <h2>Selected Projects</h2>
-    <div class="projects-grid">
-
-      <!-- Example project card -->
-      <div class="project-card">
-        <h3>🔬 Cancer Research Assistant</h3>
-        <p>Multi-Agent AI Platform synthesizing research PDFs, clinical insights, and Snowflake data.</p>
-        <a href="https://github.com/DAMG7250-Team1/CANCER_HACKATHON" target="_blank" class="btn-small">View Project</a>
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="project-list">
+        <!-- your project cards -->
       </div>
-
-      <!-- Clone for other projects -->
-      <div class="project-card">
-        <h3>💼 SkillMatchAI</h3>
-        <p>AI-powered job matching with vector search & automated cover letter generation.</p>
-        <a href="#" target="_blank" class="btn-small">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <h3>📊 NVIDIA Research Assistant</h3>
-        <p>RAG-enabled insights over financial reports with interactive dashboards.</p>
-        <a href="#" target="_blank" class="btn-small">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <h3>🏦 SEC Financial Data Pipeline</h3>
-        <p>Full ETL & analytics platform with Airflow, DBT, Snowflake & AWS.</p>
-        <a href="#" target="_blank" class="btn-small">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <h3>📄 SummarAIze</h3>
-        <p>Upload any PDF and instantly RAG–summarize, ask, and analyze with multi‑LLM support.</p>
-        <a href="#" target="_blank" class="btn-small">View Project</a>
-      </div>
-
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <h2>Let’s Connect</h2>
-    <p>Email: <a href="mailto:kasliwal.s@northeastern.edu">kasliwal.s@northeastern.edu</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sahil-kasliwal/">linkedin.com/in/sahil-kasliwal</a></p>
-    <p>GitHub: <a href="https://github.com/sahilk710">github.com/sahilk710</a></p>
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section">
+    <div class="container text-center">
+      <h2 class="section-title">Let's connect</h2>
+      <p class="subtitle">Want to collaborate or just say hi? My inbox is always open.</p>
+      <a href="mailto:sahil@example.com" class="btn primary big">sahil@example.com</a>
+      <div class="socials">
+        <a aria-label="GitHub" href="https://github.com/DAMG7250-Team1" target="_blank"><i class="ph-github-logo-bold"></i></a>
+        <a aria-label="LinkedIn" href="#" target="_blank"><i class="ph-linkedin-logo-bold"></i></a>
+        <a aria-label="Twitter" href="#" target="_blank"><i class="ph-twitter-logo-bold"></i></a>
+      </div>
+    </div>
   </section>
 
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    © <span id="year"></span> Sahil Kasliwal · Built with ❤️ and vanilla code.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
