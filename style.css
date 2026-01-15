@@ -1,0 +1,144 @@
+/* Reset */
+* {margin:0; padding:0; box-sizing:border-box;}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #ddd;
+}
+
+.hero .btn {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background: #ff8a00;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background: #e52e71;
+  transform: scale(1.05);
+}
+
+/* Skills Section */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.card i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff8a00;
+}
+
+.card h3 {margin-bottom: 0.5rem;}
+.card p {font-size: 0.9rem; color: #ccc;}
+
+/* Projects Section */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.project-card h3 {margin-bottom: 0.5rem;}
+.project-card p {font-size: 0.9rem; color: #ccc; margin-bottom: 1rem;}
+.project-card .btn {display: inline-block;}
+
+/* Footer */
+footer {
+  background: rgba(0,0,0,0.7);
+  padding: 2rem;
+  text-align: center;
+}
+
+footer .socials a {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: #ff8a00;
+  transition: 0.3s;
+}
+
+footer .socials a:hover {
+  color: #e52e71;
+  transform: scale(1.2);
+}
+
+/* Typing Animation */
+#typing {border-right: 2px solid #ff8a00; padding-right: 3px; font-weight: 600;}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .cards, .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
