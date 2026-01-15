@@ -1,86 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sahil Kasliwal | Portfolio</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahil Kasliwal | Data Scientist & GenAI Engineer</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>Hi, I'm Sahil Kasliwal</h1>
-    <p>I am a <span id="typing"></span></p>
-    <a class="btn" href="#skills">Explore My Work</a>
-  </div>
+<!-- ===== HERO SECTION ===== -->
+<section id="hero">
+    <div class="container">
+        <h1>Hi, I'm <span>Sahil Kasliwal</span></h1>
+        <p>Data Scientist | GenAI & LLM Builder | AI Engineer</p>
+        <a href="#projects" class="btn">Explore My Work</a>
+    </div>
 </section>
 
-<!-- Skills Section -->
-<section id="skills">
-  <h2>What I Do</h2>
-  <div class="cards">
-    <div class="card">
-      <i class="fas fa-database"></i>
-      <h3>Data Engineering</h3>
-      <p>ETL pipelines, Apache Spark, Airflow, DBT, Databricks, handling large-scale datasets efficiently.</p>
+<!-- ===== ABOUT / SKILLS ===== -->
+<section id="about">
+    <h2>What I Do</h2>
+    <div class="cards">
+        <div class="card">
+            <i class="fas fa-database"></i>
+            <h3>Data Engineering</h3>
+            <p>ETL pipelines, Apache Spark, Airflow, DBT, Databricks, handling large-scale datasets efficiently.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-code"></i>
+            <h3>Python & ML</h3>
+            <p>Python, TensorFlow, PyTorch, Scikit-Learn, XGBoost, LightGBM, building robust ML systems.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-robot"></i>
+            <h3>GenAI & LLMs</h3>
+            <p>Prompt engineering, RAG pipelines, LangChain, OpenAI API, Knowledge Graph-enhanced QA systems.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Data Visualization</h3>
+            <p>Interactive dashboards with Streamlit, Plotly, D3.js; model explanation with SHAP & LIME.</p>
+        </div>
     </div>
-    <div class="card">
-      <i class="fas fa-code"></i>
-      <h3>Python & ML</h3>
-      <p>Python, TensorFlow, PyTorch, Scikit-Learn, XGBoost, LightGBM, and building robust ML systems.</p>
-    </div>
-    <div class="card">
-      <i class="fas fa-robot"></i>
-      <h3>GenAI & LLMs</h3>
-      <p>Prompt engineering, RAG pipelines, LangChain, OpenAI API, and Knowledge Graph-enhanced QA systems.</p>
-    </div>
-    <div class="card">
-      <i class="fas fa-chart-bar"></i>
-      <h3>Data Analysis & Visualization</h3>
-      <p>Interactive dashboards with Streamlit, Plotly, D3.js; model explanation with SHAP & LIME.</p>
-    </div>
-  </div>
 </section>
 
-<!-- Projects Section -->
+<!-- ===== PROJECTS ===== -->
 <section id="projects">
-  <h2>Projects</h2>
-  <div class="projects-container">
-    <div class="project-card">
-      <h3>Intelligent Customer Analytics Platform</h3>
-      <p>Full-stack ML system using Python, AWS, and LangChain for customer behavior prediction and intelligent support.</p>
-      <a href="#" class="btn">View Project</a>
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+        <!-- Cancer Research Assistant -->
+        <div class="project-card">
+            <h3>🔬 Cancer Research Assistant</h3>
+            <p>🧠 Multi-Agent AI Platform for Cancer Research Synthesis</p>
+            <h4>What it does:</h4>
+            <ul>
+                <li>Snowflake-powered cancer statistics</li>
+                <li>RAG over research PDFs</li>
+                <li>Live clinical trial augmentation</li>
+                <li>Knowledge Graph–enhanced reasoning</li>
+                <li>One-click AI-generated PDF research reports</li>
+            </ul>
+            <h4>Tech Stack:</h4>
+            <p>MCP · OpenAI · CI/CD · Snowflake · FastAPI · Streamlit · Python · NLP · Airflow · S3 · Docker · GCP · Pinecone · Tavily · LangChain</p>
+            <a href="https://github.com/DAMG7250-Team1/CANCER_HACKATHON" class="btn">View Project</a>
+        </div>
+
+        <!-- SkillMatchAI -->
+        <div class="project-card">
+            <h3>💼 SkillMatchAI</h3>
+            <p>🎯 AI-Powered Job Matching & Career Intelligence Platform</p>
+            <h4>What it does:</h4>
+            <ul>
+                <li>Resume + GitHub intelligence</li>
+                <li>Vector similarity search using Pinecone</li>
+                <li>Auto-generated cover letters</li>
+                <li>Airflow-based job ingestion pipelines</li>
+            </ul>
+            <h4>Tech Stack:</h4>
+            <p>LangGraph · OpenAI · CI/CD · Neo4j · Snowflake · FastAPI · Streamlit · Python · NLP · PyPDF · Airflow · S3 · Docker · GCP · Pinecone · Tavily · Selenium · LangChain</p>
+            <a href="https://github.com/DAMG7250-Team1/skillmatch-ai" class="btn">View Project</a>
+        </div>
+
+        <!-- NVIDIA Research Assistant -->
+        <div class="project-card">
+            <h3>📊 NVIDIA Research Assistant</h3>
+            <p>📈 Financial & Research Analysis AI Assistant</p>
+            <h4>What it does:</h4>
+            <ul>
+                <li>RAG over NVIDIA quarterly reports</li>
+                <li>Snowflake historical financial data</li>
+                <li>Live web augmentation</li>
+                <li>Interactive research dashboards</li>
+            </ul>
+            <h4>Tech Stack:</h4>
+            <p>RAG · OpenAI · CI/CD · LteLLM · Snowflake · FastAPI · Streamlit · Python · NLP · Docling · Airflow · S3 · Docker · GCP · Pinecone · Tavily · Selenium · LangChain</p>
+            <a href="https://github.com/DAMG7250-Team1/nvidia-research-assistant" class="btn">View Project</a>
+        </div>
+
+        <!-- SEC Financial Data Pipeline -->
+        <div class="project-card">
+            <h3>🏦 SEC Financial Data Pipeline</h3>
+            <p>🏗️ End-to-End Financial ETL & Analytics Platform</p>
+            <h4>What it does:</h4>
+            <ul>
+                <li>SEC scraping → AWS S3 → Snowflake</li>
+                <li>DBT transformations & data validation</li>
+                <li>Airflow orchestration</li>
+                <li>Streamlit analytics dashboards</li>
+            </ul>
+            <h4>Tech Stack:</h4>
+            <p>Airflow · DBT · Snowflake · AWS · FastAPI · Streamlit</p>
+            <a href="https://github.com/DAMG7250-Team1/Sec-Financial-Data-Pipeline" class="btn">View Project</a>
+        </div>
+
+        <!-- SummarAIze -->
+        <div class="project-card">
+            <h3>📄 SummarAIze</h3>
+            <p>📚 Upload Any PDF → Summarize, Ask, Analyze</p>
+            <h4>What it does:</h4>
+            <ul>
+                <li>Multi-LLM support (GPT-4o, Gemini, Claude)</li>
+                <li>RAG-based document understanding</li>
+                <li>LiteLLM routing</li>
+                <li>FastAPI backend + Streamlit UI</li>
+            </ul>
+            <h4>Tech Stack:</h4>
+            <p>FastAPI · Streamlit · Python · RAG · OpenAI · LangChain · Pinecone</p>
+            <a href="https://github.com/DAMG7250-Team1/4_SummarAIze-" class="btn">View Project</a>
+        </div>
+
     </div>
-    <div class="project-card">
-      <h3>Predictive Sales Analytics System</h3>
-      <p>End-to-end ML pipeline on AWS SageMaker, XGBoost/LightGBM, explainable predictions, automated monitoring.</p>
-      <a href="#" class="btn">View Project</a>
-    </div>
-    <div class="project-card">
-      <h3>NLP-Powered Customer Intelligence</h3>
-      <p>Knowledge-graph based customer analytics using Neo4j, transformer NLP models, interactive D3.js visualizations.</p>
-      <a href="#" class="btn">View Project</a>
-    </div>
-  </div>
 </section>
 
-<!-- Footer -->
-<footer>
-  <p>Connect with me:</p>
-  <div class="socials">
-    <a href="https://www.linkedin.com/in/sahil-kasliwal/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/sahilkasliwal" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="mailto:kasliwal.s@northeastern.edu"><i class="fas fa-envelope"></i></a>
-  </div>
-  <p>&copy; 2026 Sahil Kasliwal</p>
-</footer>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+    <h2>Connect with Me</h2>
+    <p>Email: <a href="mailto:kasliwal.s@northeastern.edu">kasliwal.s@northeastern.edu</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sahil-kasliwal/">linkedin.com/in/sahil-kasliwal</a></p>
+    <p>GitHub: <a href="https://github.com/sahilk710">github.com/sahilk710</a></p>
+</section>
 
 <script src="script.js"></script>
 </body>
