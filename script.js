@@ -1,19 +1,19 @@
-// Dark / light auto + manual toggle
+// ---------- dark / light ----------
 const html=document.documentElement;
 const toggle=()=>{html.dataset.theme=html.dataset.theme==="dark"?"light":"dark";localStorage.setItem("theme",html.dataset.theme);};
 const initTheme=()=>{const s=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");html.dataset.theme=s;};
 initTheme();
-window.addEventListener("keydown",e=>e.key==="t"&&toggle()); // press T to toggle
+window.addEventListener("keydown",e=>e.key==="t"&&toggle());
 
-// Year in footer
+// ---------- year ----------
 document.getElementById("year").textContent=new Date().getFullYear();
 
-// Smooth scroll for anchor links
+// ---------- smooth scroll ----------
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener("click",e=>{e.preventDefault();document.querySelector(a.getAttribute("href")).scrollIntoView({behavior:"smooth"});});
 });
 
-// 3-D animated mesh background (Three.js)
+// ---------- three.js mesh ----------
 const scene=new THREE.Scene();
 const camera=new THREE.PerspectiveCamera(75,innerWidth/innerHeight,0.1,1000);
 const renderer=new THREE.WebGLRenderer({canvas:document.getElementById("hero-canvas"),alpha:true});
@@ -26,8 +26,7 @@ camera.position.z=6;
 let t=0;
 function animate(){
   t+=0.01;
-  mesh.rotation.x=t*0.2;
-  mesh.rotation.y=t*0.1;
+  mesh.rotation.x=t*0.2;mesh.rotation.y=t*0.1;
   const pos=geo.attributes.position;
   for(let i=0;i<pos.count;i++){
     const x=pos.getX(i),y=pos.getY(i);
@@ -39,21 +38,35 @@ function animate(){
 }
 animate();
 addEventListener("resize",()=>{
-  camera.aspect=innerWidth/innerHeight;
-  camera.updateProjectionMatrix();
+  camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();
   renderer.setSize(innerWidth,innerHeight);
 });
 
-// Typewriter effect for tagline (optional)
-const tag=document.querySelector(".tagline");
-const txt=tag.textContent;
-tag.textContent="";
-let i=0;
-const type=()=>{
-  if(i<txt.length){tag.textContent+=txt.charAt(i);i++;setTimeout(type,45);}
-};
-setTimeout(type,600);
+// ---------- role rotation ----------
+const roles=[
+  {emoji:"📊",title:"Data Engineer"},
+  {emoji:"🤖",title:"AI Engineer"},
+  {emoji:"💻",title:"Software Engineer"},
+  {emoji:"☁️",title:"Cloud Tinkerer"}
+];
+let roleIndex=0;
+const emojiEl=document.getElementById('role-emoji');
+const textEl=document.getElementById('role-text');
+function switchRole(){
+  roleIndex=(roleIndex+1)%roles.length;
+  emojiEl.textContent=roles[roleIndex].emoji;
+  textEl.textContent=roles[roleIndex].title;
+  textEl.style.animation='none';void textEl.offsetWidth;
+  textEl.style.animation='fadeIn .6s ease';
+}
+setInterval(switchRole,3000);
 
-// Scroll-triggered fade-in (Intersection Observer)
-const obs=new IntersectionObserver((els)=>els.forEach(e=>{if(e.isIntersecting)e.target.classList.add("in");}),{threshold:0.2});
-document.querySelectorAll(".card,.project-card").forEach(el=>obs.observe(el));
+// ---------- image cross-fade ----------
+const imgs=document.querySelectorAll('.hero-images img');
+let imgIndex=0;
+function nextImage(){
+  imgs[imgIndex].classList.remove('active');
+  imgIndex=(imgIndex+1)%imgs.length;
+  imgs[imgIndex].classList.add('active');
+}
+setInterval(nextImage,5000);
