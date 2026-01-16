@@ -1,1 +1,111 @@
-404: Not Found
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Kasliwal | AI & Data Scientist</title>
+  <meta name="description" content="Sahil Kasliwal — AI engineer building GenAI tools, data pipelines and intelligent analytics.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/phosphor-icons@1.4.2/src/index.js" defer></script>
+</head>
+
+<body>
+  <!-- ------ HERO ------ -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+
+    <div class="hero-text">
+      <h1 class="glitch" data-text="Hi, I'm Sahil Kasliwal">Hi, I'm Sahil Kasliwal</h1>
+
+      <!-- rotating role -->
+      <p class="role-wrapper">
+        <span id="role-emoji">📊</span>
+        <span id="role-text">Data Engineer</span>
+      </p>
+
+      <p class="tagline">Master’s student · Building GenAI side projects · Sharing write-ups ✍️</p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">Explore my work</a>
+        <a href="assets/cv.pdf" target="_blank" class="btn ghost">Résumé</a>
+      </div>
+
+      <div class="hero-socials">
+        <a aria-label="LinkedIn" href="https://linkedin.com/in/sahil-kasliwal" target="_blank"><i class="ph-linkedin-logo-fill"></i></a>
+        <a aria-label="GitHub" href="https://github.com/DAMG7250-Team1" target="_blank"><i class="ph-github-logo-fill"></i></a>
+        <a aria-label="Mail" href="mailto:sahil@example.com"><i class="ph-envelope-fill"></i></a>
+      </div>
+    </div>
+
+    <!-- image carousel -->
+    <div class="hero-images">
+      <img src="assets/img/hero-0.jpg" alt="" class="active">
+      <img src="assets/img/hero-1.jpg" alt="">
+      <img src="assets/img/hero-2.jpg" alt="">
+      <img src="assets/img/hero-3.jpg" alt="">
+      <img src="assets/img/hero-4.jpg" alt="">
+      <img src="assets/img/hero-5.jpg" alt="">
+    </div>
+
+    <a href="#about" class="scroll-indicator"><i class="ph-caret-down-bold"></i></a>
+  </section>
+
+  <!-- ------ ABOUT ------ -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">What I Do</h2>
+      <div class="grid">
+        <div class="card"><h3>Data Engineering</h3><p>ETL pipelines, Spark, Airflow, DBT, Databricks, handling large-scale datasets efficiently.</p></div>
+        <div class="card"><h3>Python & ML</h3><p>Python, TensorFlow, PyTorch, Scikit-Learn, XGBoost, LightGBM, building robust ML systems.</p></div>
+        <div class="card"><h3>GenAI & LLMs</h3><p>Prompt engineering, RAG pipelines, LangChain, OpenAI API, Knowledge-Graph QA systems.</p></div>
+        <div class="card"><h3>Data Viz & Analytics</h3><p>Interactive dashboards with Streamlit, Plotly, D3.js; model explanation with SHAP & LIME.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------ PROJECTS ------ -->
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="project-list">
+        <!-- Cancer Research Assistant -->
+        <div class="project-card"><h3>🔬 Cancer Research Assistant</h3><p>Multi-Agent AI Platform for Cancer Research Synthesis</p><ul><li>Snowflake-powered cancer statistics</li><li>RAG over research PDFs</li><li>Live clinical trial augmentation</li><li>One-click AI-generated PDF reports</li></ul><p class="tech">MCP · OpenAI · FastAPI · Streamlit · Python · Airflow · Docker · GCP · Pinecone · LangChain</p><a href="https://github.com/DAMG7250-Team1/CANCER_HACKATHON" class="btn small" target="_blank">View Project</a></div>
+
+        <!-- SkillMatchAI -->
+        <div class="project-card"><h3>💼 SkillMatchAI</h3><p>AI-Powered Job Matching & Career Intelligence Platform</p><ul><li>Resume + GitHub intelligence</li><li>Vector similarity search using Pinecone</li><li>Auto-generated cover letters</li><li>Airflow-based job ingestion pipelines</li></ul><p class="tech">LangGraph · OpenAI · Neo4j · Snowflake · FastAPI · Streamlit · Airflow · Docker · GCP · Pinecone · Selenium · LangChain</p><a href="#" class="btn small" target="_blank">View Project</a></div>
+
+        <!-- NVIDIA Research Assistant -->
+        <div class="project-card"><h3>📊 NVIDIA Research Assistant</h3><p>Financial & Research Analysis AI Assistant</p><ul><li>RAG over NVIDIA quarterly reports</li><li>Snowflake historical financial data</li><li>Live web augmentation</li><li>Interactive research dashboards</li></ul><p class="tech">RAG · OpenAI · LteLLM · Snowflake · FastAPI · Streamlit · Airflow · Docker · GCP · Pinecone · Selenium · LangChain</p><a href="#" class="btn small" target="_blank">View Project</a></div>
+
+        <!-- SEC Pipeline -->
+        <div class="project-card"><h3>🏦 SEC Financial Data Pipeline</h3><p>End-to-End Financial ETL & Analytics Platform</p><ul><li>SEC scraping → AWS S3 → Snowflake</li><li>DBT transformations & data validation</li><li>Airflow orchestration</li><li>Streamlit analytics dashboards</li></ul><p class="tech">Airflow · DBT · Snowflake · AWS · FastAPI · Streamlit</p><a href="#" class="btn small" target="_blank">View Project</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------ CONTACT ------ -->
+  <section id="contact" class="section">
+    <div class="container text-center">
+      <h2 class="section-title">Let's connect</h2>
+      <p class="subtitle">Want to collaborate or just say hi? My inbox is always open.</p>
+      <a href="mailto:sahil@example.com" class="btn primary big">sahil@example.com</a>
+      <div class="socials">
+        <a aria-label="LinkedIn" href="https://linkedin.com/in/sahil-kasliwal" target="_blank"><i class="ph-linkedin-logo-bold"></i></a>
+        <a aria-label="GitHub" href="https://github.com/DAMG7250-Team1" target="_blank"><i class="ph-github-logo-bold"></i></a>
+        <a aria-label="Twitter" href="#" target="_blank"><i class="ph-twitter-logo-bold"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------ FOOTER ------ -->
+  <footer class="footer">
+    © <span id="year"></span> Sahil Kasliwal · Built with ❤️ and vanilla code.
+  </footer>
+
+  <!-- ------ SCRIPTS ------ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
