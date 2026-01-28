@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sahil Kasliwal | Data Scientist & AI Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@300;500;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+    <canvas id="particles"></canvas>
+
+    <nav>
+        <div class="logo">S.K.</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Sahil Kasliwal</span></h1>
+            <p class="hero-subtitle">
+                <span class="typing" id="typed"></span>
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-grid">
+            <div class="about-image reveal">
+                <div class="img-container">
+                    <img src="My.jpeg" alt="Sahil Kasliwal" />
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-num">2+</div>
+                        <div class="stat-label">Years Exp</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">5+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">3.7</div>
+                        <div class="stat-label">GPA</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <p>
+                    Data Scientist and AI Engineer with hands-on expertise in LLMs, RAG
+                    pipelines, and knowledge-graph augmented solutions. I build scalable
+                    AI/ML systems that optimize decision-making, reduce operational
+                    overhead, and deliver measurable business impact.
+                </p>
+                <p>
+                    Passionate about transforming complex data into actionable insights
+                    using ML, cloud, and generative AI technologies. Currently pursuing
+                    my Master's at Northeastern University with a focus on Data Science
+                    and Machine Learning.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i> +1 (223) 291-8146
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i> sahilkasliwal7@gmail.com
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i> Boston, MA
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title reveal">Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skills-category reveal">
+                <h3><i class="fas fa-code"></i> Programming & Databases</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">SQL</div>
+                    <div class="skill-tag">MongoDB</div>
+                    <div class="skill-tag">Neo4j</div>
+                    <div class="skill-tag">Pinecone</div>
+                    <div class="skill-tag">Chroma</div>
+                    <div class="skill-tag">FAISS</div>
+                    <div class="skill-tag">Redis</div>
+                </div>
+            </div>
+            <div class="skills-category reveal">
+                <h3><i class="fas fa-brain"></i> Machine Learning & AI</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">TensorFlow</div>
+                    <div class="skill-tag">PyTorch</div>
+                    <div class="skill-tag">Scikit-Learn</div>
+                    <div class="skill-tag">XGBoost</div>
+                    <div class="skill-tag">LightGBM</div>
+                    <div class="skill-tag">Transformers</div>
+                    <div class="skill-tag">BERT</div>
+                    <div class="skill-tag">Deep Learning</div>
+                    <div class="skill-tag">MLOps</div>
+                </div>
+            </div>
+            <div class="skills-category reveal">
+                <h3><i class="fas fa-robot"></i> Generative AI & LLMs</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">LangChain</div>
+                    <div class="skill-tag">RAG</div>
+                    <div class="skill-tag">Prompt Engineering</div>
+                    <div class="skill-tag">OpenAI API</div>
+                    <div class="skill-tag">Knowledge Graphs</div>
+                    <div class="skill-tag">GPT-4</div>
+                    <div class="skill-tag">Claude</div>
+                    <div class="skill-tag">Llama</div>
+                </div>
+            </div>
+            <div class="skills-category reveal">
+                <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">AWS SageMaker</div>
+                    <div class="skill-tag">AWS Glue</div>
+                    <div class="skill-tag">AWS Lambda</div>
+                    <div class="skill-tag">GCP</div>
+                    <div class="skill-tag">Azure</div>
+                    <div class="skill-tag">Docker</div>
+                    <div class="skill-tag">Kubernetes</div>
+                </div>
+            </div>
+            <div class="skills-category reveal">
+                <h3><i class="fas fa-database"></i> Data Engineering</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Apache Spark</div>
+                    <div class="skill-tag">Apache Airflow</div>
+                    <div class="skill-tag">Databricks</div>
+                    <div class="skill-tag">DBT</div>
+                    <div class="skill-tag">Hadoop</div>
+                    <div class="skill-tag">CI/CD</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title reveal">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">July 2025 – Dec 2025</div>
+                    <div class="timeline-title">Data Scientist Co-op</div>
+                    <div class="timeline-company">Fidelity Investments – MA, USA</div>
+                    <div class="timeline-desc">
+                        <li>
+                            Led LLM prompt engineering across 5+ models, reducing
+                            hallucination rates by 34%
+                        </li>
+                        <li>
+                            Built internal LLM experimentation platform with RAG-based
+                            retrieval
+                        </li>
+                        <li>
+                            Implemented Knowledge Graph augmented generation, improving
+                            multi-hop reasoning by 28%
+                        </li>
+                        <li>
+                            Developed automated evaluation dashboard, reducing manual QA time
+                            by 60%
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">June 2024 – Aug 2024</div>
+                    <div class="timeline-title">Data Science Intern</div>
+                    <div class="timeline-company">LMS Pvt Ltd – Indore, India</div>
+                    <div class="timeline-desc">
+                        <li>
+                            Built ML models on AWS SageMaker, improving prediction accuracy
+                            by 40%
+                        </li>
+                        <li>
+                            Created end-to-end data pipelines processing 1TB+ customer data
+                        </li>
+                        <li>
+                            Implemented NLP models with BERT achieving 85% accuracy
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">June 2023 – Aug 2023</div>
+                    <div class="timeline-title">Data Analyst</div>
+                    <div class="timeline-company">
+                        Codiant Software Technologies – Indore, India
+                    </div>
+                    <div class="timeline-desc">
+                        <li>
+                            Built automated ML pipelines with Python, Docker, and AWS Step
+                            Functions
+                        </li>
+                        <li>
+                            Developed Neo4j knowledge-graph models across 1M+ transactions
+                        </li>
+                        <li>Trained churn prediction model achieving 88% accuracy</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title reveal">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="project-title">SkillMatchAI</div>
+                    <div class="project-date">Jan 2025 – Apr 2025</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-desc">
+                        AI-powered job recommendation system using OpenAI embeddings and
+                        Pinecone vector search. Improved candidate job relevance by 41%
+                        with automated cover letter generation.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">OpenAI</span>
+                        <span class="tech-tag">Pinecone</span>
+                        <span class="tech-tag">Airflow</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DAMG7250-Team1/skillmatch-ai"><i
+                                class="fab fa-github fa-lg"></i></a>
+                        <a href="https://damg7250-team1-skillmatch-ai-frontendapp-arx616.streamlit.app/"><i
+                                class="fas fa-external-link-alt fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="project-title">NVIDIA Research Assistant</div>
+                    <div class="project-date">Sep 2024 – Dec 2024</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-desc">
+                        RAG-based financial insights system analyzing NVIDIA quarterly
+                        reports with Snowflake data. Improved insight extraction accuracy
+                        by 29% and reduced analysis time by 37%.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">Pinecone</span>
+                        <span class="tech-tag">Snowflake</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DAMG7250-Team1/Assignment-4-Part-2"><i
+                                class="fab fa-github fa-lg"></i></a>
+                        <a href="https://kdmrblkavnkd4knwyasezm.streamlit.app/"><i
+                                class="fas fa-external-link-alt fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon"><i class="fas fa-file-pdf"></i></div>
+                    <div class="project-title">SummarAIze</div>
+                    <div class="project-date">Oct 2021 – Dec 2021</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-desc">
+                        PDF summarization and QA application integrating GPT, Claude, and
+                        LiteLLM APIs. Reduced multi-page PDF analysis latency by 42%
+                        with FastAPI and Redis streams.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">GPT</span>
+                        <span class="tech-tag">Claude</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DAMG7250-Team1/4_SummarAIze-"><i
+                                class="fab fa-github fa-lg"></i></a>
+                        <a href="https://content-extraction-tool-hh9cxuyufdcnur47bpteae.streamlit.app/"><i
+                                class="fas fa-external-link-alt fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title reveal">Education</h2>
+        <div class="education-cards">
+            <div class="edu-card reveal">
+                <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="edu-degree">M.S. in Computer Software Engineering</div>
+                <div class="edu-school">Northeastern University, Boston, MA</div>
+                <div class="edu-details">
+                    DS and ML Focus | GPA: 3.7/4 | Expected Aug 2026
+                </div>
+            </div>
+            <div class="edu-card reveal">
+                <div class="edu-icon"><i class="fas fa-university"></i></div>
+                <div class="edu-degree">B.Tech in Computer Science</div>
+                <div class="edu-school">Medi-Caps University, Indore, India</div>
+                <div class="edu-details">GPA: 3.7/4 | Graduated June 2024</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title reveal">Let's Connect</h2>
+        <p class="reveal" style="color: var(--muted); max-width: 600px; margin: 0 auto">
+            I'm always open to discussing new opportunities, AI/ML projects, or just
+            having a chat about technology!
+        </p>
+        <div class="contact-links reveal">
+            <a href="mailto:sahilkasliwal7@gmail.com" class="contact-link">
+                <i class="fas fa-envelope"></i>
+                <strong>Email</strong>
+                <span>sahilkasliwal7@gmail.com</span>
+            </a>
+            <a href="https://linkedin.com/in/sahil-kasliwal" class="contact-link" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                <strong>LinkedIn</strong>
+                <span>sahil-kasliwal</span>
+            </a>
+            <a href="#" class="contact-link" target="_blank">
+                <i class="fab fa-github"></i>
+                <strong>GitHub</strong>
+                <span>View Profile</span>
+            </a>
+            <a href="tel:+12232918146" class="contact-link">
+                <i class="fas fa-phone"></i>
+                <strong>Phone</strong>
+                <span>+1 (223) 291-8146</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Sahil Kasliwal. Built with passion and code.</p>
+    </footer>
+
+    <!-- Music Player -->
+    <div class="music-container">
+        <div id="youtube-player"></div>
+        <div class="music-controls">
+            <div class="status-dot tooltip" id="music-status" data-tooltip="Music Status"></div>
+            <div class="equalizer" id="equalizer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <div class="controls-group">
+                <button id="music-toggle" class="music-btn" aria-label="Toggle Play/Pause">
+                    <i class="fas fa-play" id="play-icon"></i>
+                    <i class="fas fa-pause" id="pause-icon" style="display: none;"></i>
+                </button>
+                <button id="mute-toggle" class="music-btn" aria-label="Toggle Mute">
+                    <i class="fas fa-volume-mute" id="mute-icon"></i>
+                    <i class="fas fa-volume-up" id="unmute-icon" style="display: none;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
